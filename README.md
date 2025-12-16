@@ -53,13 +53,22 @@ Si un attaquant parvient à injecter un binaire modifié pendant le transit, ou 
 *   Python 3.x (Flask)
 *   OpenSSL (pour la génération des certificats)
 
-### Structure du projet
+### 📂 Structure du projet
+
+```text
 Secure-OTA-ESP32/
-├── Device_ESP32/ # Codes sources C++ (V1, V2, V3)
-└── Server/ # Serveur Flask et Binaires
-├── firmwares/ # Stockage des versions (.bin)
-├── cert.pem # Certificat public
-└── ota_server.py # Script serveur
+│
+├── Device_ESP32/                 # Codes sources C++ (Client IoT)
+│   ├── Firmware_V1_Base/         # Version 1.0 (Initiale)
+│   ├── Firmware_V2_Promo/        # Version 2.0 (Mise à jour IHM)
+│   └── Firmware_V3_Liquid/       # Version 3.0 (Changement logique LED)
+│
+└── Server/                       # Infrastructure Backend (Python)
+    ├── firmwares/                # Stockage sécurisé des binaires (.bin)
+    ├── cert.pem                  # Certificat public pour SSL
+    ├── key.pem                   # Clé privée (Ne pas partager)
+    ├── requirements.txt          # Liste des dépendances pip
+    └── ota_server.py             # Script du serveur de distribution
 
 ---
 *Ce projet a été réalisé dans le cadre d'une démonstration technique sur la cybersécurité des objets connectés (IoT).*
