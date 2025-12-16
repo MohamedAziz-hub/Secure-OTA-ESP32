@@ -24,13 +24,14 @@ Le projet se compose de deux entités distinctes :
 
 ## 📦 Cycle de Vie des Firmwares (Démonstration)
 
-Le projet démontre l'évolution d'un produit à travers trois versions distinctes, prouvant la flexibilité du système OTA :
+Le projet démontre l'évolution d'un produit à travers trois versions distinctes ( ou n'importe quelle version ), prouvant la flexibilité du système OTA :
 
 *   **Firmware V1 (Base)** : Version initiale déployée en usine.
 *   **Firmware V2 (Promo)** : Mise à jour déployant une nouvelle interface LCD et une nouvelle fréquence de LED.
 *   **Firmware V3 (Liquidation)** : Mise à jour finale modifiant la logique métier (comportement Stroboscope).
+*   **Firmware Vx (Évolutivité)** : Le système est conçu pour déployer **n'importe quelle future version**, garantissant que seul un firmware dont l'authenticité (Certificat SSL) et l'intégrité (Hash SHA-256) sont validées sera accepté par le microcontrôleur.
 
-L'appareil passe de la V1 à la V3 de manière autonome et sécurisée.
+L'appareil passe de la V1 à la V3 ou n'importe quelle version de manière autonome et sécurisée.
 
 ## 🛡️ Scénarios de Sécurité & Gestion d'Erreurs
 
