@@ -69,6 +69,6 @@ Secure-OTA-ESP32/
     ├── key.pem                   # Clé privée (Ne pas partager)
     ├── requirements.txt          # Liste des dépendances pip
     └── ota_server.py             # Script du serveur de distribution
-
+```
 ---
 *Ce projet a été réalisé dans le cadre d'une démonstration technique sur la cybersécurité des objets connectés (IoT).*
