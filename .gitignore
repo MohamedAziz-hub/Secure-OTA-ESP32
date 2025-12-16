@@ -1,0 +1,10 @@
+# Ignorer les clés privées (TRES IMPORTANT)
+*.key
+key.pem
+
+# Ignorer les dossiers systèmes et IDE
+.venv/
+__pycache__/
+.idea/
+.vscode/
+*.DS_Store
